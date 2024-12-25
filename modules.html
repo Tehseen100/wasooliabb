@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /*............ Modules Section............ */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        :root {
+            --dark-background: #222b40;
+        }
+
+        .section-p {
+            padding: 30px 50px;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        #modules {
+            background-color: var(--dark-background);
+            padding: 40px 30px;
+        }
+
+        .modules-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modules-inner h2 {
+            color: #0693e3;
+            margin-bottom: 40px;
+            font-weight: 520;
+            font-size: 30px;
+        }
+
+        .module-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .module {
+            padding: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: 0.4s ease-in;
+        }
+
+        .module:hover {
+            transform: translateY(-10px);
+        }
+
+        .module-image {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #ffffff79;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .module-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .module-title h4 {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .module-description p {
+            font-size: 12px;
+            color: #dddd;
+            line-height: 18px;
+        }
+
+
+        .hide-module {
+            display: none;
+        }
+
+        .module-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        #moduleLoad {
+            background-color: transparent;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+
+        #moduleLoad i {
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        #moduleLoad i.rotate {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-------------------- Module Section -------------------->
+    <section id="modules">
+        <div class="modules-inner">
+            <h2>Hydration, Elevated: Our Services</h2>
+            <div class="module-container">
+
+                <div class="module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/gallon.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>New Jar</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>Explore our range of Premium Water Accessories, designed of enhance your hydration
+                            experience
+                        </p>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/water-dispenser.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Water Accessories</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>Explore our range of Premium Water Accessories, designed of enhance your hydration
+                            experience
+                        </p>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/water-filter.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Water Purifiers</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>Rent or buy state of the art Water purifiers that guarantee purity and safe Drinking
+                            Water
+                            for your home or Business </p>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/tanker.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Water Tanker</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>Reliable and efficient tanker Water delivery Service, ensuring a continous Supply of
+                            Quality
+                            Water </p>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/soda.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Beverages</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>An extensive selection of Beverages to complement your Hydration needs, stay Hydrated
+                            tastefully </p>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/water-quality.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Water Testing</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>Get your Water Resources tested through our partnered water testing firms with ease. </p>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/reminder.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Water Intake</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>Smart Water intake monitoring feature enables you to track and maintain your daily
+                            Hydration
+                            goals. </p>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/water.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Water Banking</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>Invest in a Secure Water bank or request for one! ensuring a strategic and Sustainable
+                            Water
+                            supply for the Future. </p>
+                    </div>
+                </div>
+
+                <!-- intial hide  -->
+
+                <div class="module hide-module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/soda.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Beverages</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>An extensive selection of Beverages to complement your Hydration needs, stay Hydrated
+                            tastefully </p>
+                    </div>
+                </div>
+
+                <div class="module hide-module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/water-quality.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Water Testing</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>Get your Water Resources tested through our partnered water testing firms with ease. </p>
+                    </div>
+                </div>
+
+                <div class="module hide-module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/reminder.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Water Intake</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>Smart Water intake monitoring feature enables you to track and maintain your daily
+                            Hydration
+                            goals. </p>
+                    </div>
+                </div>
+
+                <div class="module hide-module">
+                    <div class="module-image">
+                        <img src="assets/imgs/modules/water.svg" alt="">
+                    </div>
+                    <div class="module-title">
+                        <h4>Water Banking</h4>
+                    </div>
+                    <div class="module-description">
+                        <p>Invest in a Secure Water bank or request for one! ensuring a strategic and Sustainable
+                            Water
+                            supply for the Future. </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="module-btn">
+                <button id="moduleLoad"> <span class="moduleLoadText">Show More</span><i
+                        class="fa fa-chevron-down"></i></button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script>
+        // module js code 
+        const moduleLoad = document.getElementById("moduleLoad");
+        const moduleLoadText = moduleLoad.querySelector('.moduleLoadText');
+        const moduleLoadIcon = moduleLoad.querySelector('i');
+        const modulesContainer = document.querySelectorAll(".module");
+
+        moduleLoad.addEventListener("click", () => {
+            let hideModules = document.querySelectorAll(".module.hide-module");
+            if (hideModules.length > 0) {
+                hideModules.forEach(hideModule => {
+                    hideModule.classList.remove("hide-module");
+                });
+                moduleLoadText.textContent = 'Show Less';
+                moduleLoadIcon.classList.add("rotate");
+            } else {
+                modulesContainer.forEach((module, index) => {
+                    if (index > 7) {
+                        module.classList.add("hide-module");
+                    }
+
+                });
+                moduleLoadText.textContent = 'Show More';
+                moduleLoadIcon.classList.remove("rotate");
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
